@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试二维码插件</title>
+
+</head>
+<body>
+    <img id="qrious" src="">
+</body>
+<script src="plugins/qrious.min.js"></script>
+<script>
+
+    new QRious({
+        element:document.getElementById("qrious"),
+        level:'H',
+        background:'yellow',
+        foreground:'blue',
+        size:'300',
+        value:'http://www.baidu.com'  // 二维码存储的内容， （支付链接地址）
+    })
+
+</script>
+</html>
